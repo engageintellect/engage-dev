@@ -84,11 +84,8 @@ export default function Home() {
             <div>
               Aliqua velit dolor occaecat irure anim qui qui exercitation
               laboris consequat. Enim dolor velit ex ex commodo tempor minim
-              laboris consequat. Enim dolor velit ex ex commodo tempor minim
-              enim. Dolor eu ea irure id esse nulla ut. Proident ea ut
-              adipisicing sunt non irure ea mollit sit irure reprehenderit.
-              enim. Dolor eu ea irure id esse nulla ut. Proident ea ut
-              adipisicing sunt non irure ea mollit sit irure reprehenderit.
+              irure id esse nulla ut. Proident ea ut adipisicing sunt non irure
+              ea mollit sit irure reprehenderit.
             </div>
           </div>
           <div className="bg-zinc-800 text-zinc-300 p-5 rounded-lg">
