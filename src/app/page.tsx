@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="absolute z-50 top-0 right-0 h-full p-2 lg:p-5 text-right">
         <a href="/">
-          <div className="flex items-center justify-end gap-2 text-zinc-300 bg-zinc-900/25 hover:bg-zinc-900 rounded-md transition-all duration-300 py-2 px-4">
+          <div className="flex items-center justify-end gap-2 text-zinc-300 bg-zinc-900/25 hover:bg-zinc-900/50 rounded-md transition-all duration-300 py-2 px-4">
             <div>
               <FaGithub className="text-2xl drop-shadow-lg" />
             </div>
