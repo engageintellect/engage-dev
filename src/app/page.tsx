@@ -1,15 +1,19 @@
 import Image from "next/image";
-// import { Inter } from "next/font/google";
 import { FaGithub } from "react-icons/fa";
 import FadeIn from "./lib/components/FadeIn";
-
 import "./globals.css";
-
+// import { Inter } from "next/font/google";
 // const inter = Inter({ subsets: ["latin"] });
 
+// IMAGES
 const modern = "/images/modern.jpg";
 const modern2 = "/images/modern2.jpg";
+
+// VIDEOS
 const beach_waves = "/videos/beach-waves.mp4";
+const venice = "/videos/venice.mp4";
+const la_night = "/videos/la-night.mp4";
+const data_earth = "/videos/data-earth.mp4";
 
 export default function Home() {
   return (
@@ -130,9 +134,9 @@ export default function Home() {
                     loop
                     muted
                     playsInline
-                    className="h-full w-full object-cover opacity-20 shadow-lg absolute inset-0 rounded-lg"
+                    className="h-full w-full object-cover opacity-20 shadow-lg absolute inset-0 rounded-lg saturate-150"
                   >
-                    <source src={beach_waves} type="video/mp4" />
+                    <source src={data_earth} type="video/mp4" />
                   </video>
 
                   {/* <div className="absolute top-0 flex items-center justify-center h-full flex-col p-5"> */}
