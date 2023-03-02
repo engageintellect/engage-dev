@@ -44,7 +44,6 @@ export default function Home() {
           <div className="flex flex-col px-6 z-50">
             <a
               href="/#grid"
-              target="_blank"
               className="text-white font-semibold text-8xl drop-shadow-md"
             >
               Hello World
