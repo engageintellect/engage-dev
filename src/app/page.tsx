@@ -7,6 +7,7 @@ import Image from "next/image";
 import FadeIn from "./lib/components/FadeIn";
 import Card from "./lib/components/Card";
 import CardWide from "./lib/components/CardWide";
+import { info, hero, cards } from "./data";
 // import { Inter } from "next/font/google";
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -38,7 +39,7 @@ export default function Home() {
       </div>
 
       <div className="absolute z-50 top-0 right-0 h-full p-2 lg:p-5 text-right">
-        <a href="https://github.com/engageintellect" target="_blank">
+        <a href={info.github_url} target="_blank">
           <div className="flex lg:fixed lg:top-5 lg:right-5 items-center justify-end gap-2 text-zinc-300 bg-zinc-900/25 hover:bg-zinc-900/50 rounded-md transition-all duration-300 py-2 px-4">
             <div>
               <FaGithub className="text-2xl drop-shadow-lg" />
@@ -68,18 +69,18 @@ export default function Home() {
             <div className="flex justify-center gap-2">
               <div>
                 <a
-                  href="/#grid"
+                  href={hero.button1.url}
                   className="bg-zinc-900/25 text-zinc-300 hover:bg-zinc-900/50 rounded-md py-2 px-4 text-xl transition-all duration-300"
                 >
-                  About
+                  {hero.button1.label}
                 </a>
               </div>
               <div>
                 <a
-                  href="/#grid"
+                  href={hero.button2.url}
                   className="bg-zinc-900/25  text-zinc-300 hover:bg-zinc-900/50 rounded-md py-2 px-4 text-xl transition-all duration-300"
                 >
-                  Servers
+                  {hero.button2.label}
                 </a>
               </div>
             </div>
@@ -97,40 +98,36 @@ export default function Home() {
           component={
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 p-5">
               <Card
-                url="https://google.com"
-                title="About"
-                description="Aliqua velit dolor occaecat irure anim qui qui exercitation laboris consequat. Enim dolor velit ex ex commodo tempor minim enim. Dolor eu ea irure id esse nulla ut. Proident ea ut adipisicing sunt non irure ea mollit sit irure reprehenderit."
+                url={cards.card1.url}
+                title={cards.card1.title}
+                description={cards.card1.description}
               />
-
               <Card video={network} />
-
               <Card
-                url="https://engage-homepage.vercel.app/category/articles"
-                title="Articles"
-                description="Aliqua velit dolor occaecat irure anim qui qui exercitation laboris consequat. Enim dolor velit ex ex commodo tempor minim enim. Dolor eu ea irure id esse nulla ut. Proident ea ut adipisicing sunt non irure ea mollit sit irure reprehenderit."
+                url={cards.card3.url}
+                title={cards.card3.title}
+                description={cards.card3.description}
               />
-
               <CardWide video={network_hub} />
               <Card
-                url="https://engage-homepage.vercel.app/category/projects"
-                title="Projects"
-                description="Aliqua velit dolor occaecat irure anim qui qui exercitation laboris consequat. Enim dolor velit ex ex commodo tempor minim enim. Dolor eu ea irure id esse nulla ut. Proident ea ut adipisicing sunt non irure ea mollit sit irure reprehenderit."
-              />
-              {/* <Card video={waves} /> */}
-              <Card
-                url="http://45.56.88.245:8090/_/"
-                title="Linode Server"
-                description="Backend development database, powered by PocketBase & Linode."
+                url={cards.card5.url}
+                title={cards.card5.title}
+                description={cards.card5.description}
               />
               <Card
-                url="http://192.168.0.185:8090/_/"
-                title="Pi"
-                description="A private, secure, PocketBase backend. Hosted on a Raspberry Pi using Manjaro Linux."
+                url={cards.card6.url}
+                title={cards.card6.title}
+                description={cards.card6.title}
               />
               <Card
-                url="https://engageintellect-docs.vercel.app/docs"
-                title="Docs"
-                description="A secure, local-only PocketBase backend."
+                url={cards.card7.url}
+                title={cards.card7.title}
+                description={cards.card7.description}
+              />
+              <Card
+                url={cards.card8.url}
+                title={cards.card8.title}
+                description={cards.card8.description}
               />
             </div>
           }
