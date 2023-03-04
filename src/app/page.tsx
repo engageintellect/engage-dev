@@ -120,12 +120,12 @@ export default function Home() {
               <Card
                 url="http://45.56.88.245:8090/_/"
                 title="Linode Server"
-                description="Backend database, powered by PocketBase."
+                description="Backend development database, powered by PocketBase & Linode."
               />
               <Card
                 url="http://192.168.0.185:8090/_/"
                 title="Pi"
-                description="A secure, local-only PocketBase backend. Hosted on a Raspberry Pi using Manjaro Linux."
+                description="A private, secure, PocketBase backend. Hosted on a Raspberry Pi using Manjaro Linux."
               />
               <Card
                 url="https://engageintellect-docs.vercel.app/docs"
