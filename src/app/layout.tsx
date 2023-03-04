@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Hello World",
-  description: "Next.js + Tailwind CSS + TypeScript",
+  title: "Dev Dashboard",
+  description: "@engageintellect personal dev dashboard",
 };
 
 export default function RootLayout({

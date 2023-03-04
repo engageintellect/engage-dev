@@ -1,5 +1,8 @@
 import "./globals.css";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaCode, FaServer } from "react-icons/fa";
+import { AiOutlineCloudServer } from "react-icons/ai";
+import { RiDashboardLine } from "react-icons/ri";
+import { RiCodeBoxFill } from "react-icons/ri";
 import Image from "next/image";
 import FadeIn from "./lib/components/FadeIn";
 import Card from "./lib/components/Card";
@@ -29,13 +32,13 @@ export default function Home() {
           priority
           src={modern}
           alt="Next.js logo"
-          className="h-full w-full object-cover opacity-10 shadow-lg"
+          className="h-full w-full saturate-0 object-cover opacity-10 shadow-lg"
           fill
         />
       </div>
 
       <div className="absolute z-50 top-0 right-0 h-full p-2 lg:p-5 text-right">
-        <a href="/" target="_blank">
+        <a href="https://github.com/engageintellect" target="_blank">
           <div className="flex lg:fixed lg:top-5 lg:right-5 items-center justify-end gap-2 text-zinc-300 bg-zinc-900/25 hover:bg-zinc-900/50 rounded-md transition-all duration-300 py-2 px-4">
             <div>
               <FaGithub className="text-2xl drop-shadow-lg" />
@@ -48,17 +51,37 @@ export default function Home() {
       {/* HERO */}
       <div className="absolute top-0 h-full w-full" id="main">
         <div className="flex items-center justify-center h-full">
-          <div className="flex flex-col px-6 z-50 gap-2">
+          <div className="flex flex-col justify-center px-6 z-50 gap-5">
             <div>
               <a
                 href="/#grid"
                 className="text-white font-semibold text-8xl drop-shadow-md"
               >
-                engage intellect
+                <div className="flex justify-center gap-2">
+                  <div>
+                    <FaCode className="text-[20rem] hover:scale-[97%] active:scale-[90%] transition-all duration-200 text-zinc-900 opacity-50 drop-shadow-lg" />
+                  </div>
+                </div>
               </a>
             </div>
-            <div className="text-zinc-300 text-2xl drop-shadow-md z-50">
-              <a href="https://google.com">Hello World</a>
+
+            <div className="flex justify-center gap-2">
+              <div>
+                <a
+                  href="/#grid"
+                  className="bg-zinc-900/25 text-zinc-300 hover:bg-zinc-900/50 rounded-md py-2 px-4 text-xl transition-all duration-300"
+                >
+                  About
+                </a>
+              </div>
+              <div>
+                <a
+                  href="/#grid"
+                  className="bg-zinc-900/25  text-zinc-300 hover:bg-zinc-900/50 rounded-md py-2 px-4 text-xl transition-all duration-300"
+                >
+                  Servers
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -102,7 +125,7 @@ export default function Home() {
               <Card
                 url="http://192.168.0.185:8090/_/"
                 title="Pi"
-                description="A secure, local-only PocketBase backend. Hosted on a Raspberry Pi."
+                description="A secure, local-only PocketBase backend. Hosted on a Raspberry Pi using Manjaro Linux."
               />
               <Card
                 url="https://engageintellect-docs.vercel.app/docs"
