@@ -88,7 +88,7 @@ export default function Home() {
               <CardWide
                 title="Card 3"
                 description="Aliqua velit dolor occaecat irure anim qui qui exercitation laboris consequat. Enim dolor velit ex ex commodo tempor minim enim. Dolor eu ea irure id esse nulla ut. Proident ea ut adipisicing sunt non irure ea mollit sit irure reprehenderit."
-                video={waves}
+                video={beach_waves}
               />
               <Card
                 title="Card 4"
