@@ -4,8 +4,9 @@
 
 - Next.js 13.2-Experimental w/ App directory
 - TailwindCSS
-- TypeScript
+- Notion API
 - Framer Motion
+- TypeScript
 - API Routes
 
 ## Getting Started

@@ -8,18 +8,15 @@ import FadeIn from "./lib/components/FadeIn";
 import Card from "./lib/components/Card";
 import CardWide from "./lib/components/CardWide";
 import { info, hero, cards } from "./data";
+import Create from "./lib/notion/Create";
 // import { Inter } from "next/font/google";
 // const inter = Inter({ subsets: ["latin"] });
 
 // IMAGES
-const modern = "/images/modern.jpg";
-const modern2 = "/images/modern2.jpg";
+const modern = "/images/modern5.jpg";
 
 // VIDEOS
 const beach_waves = "/videos/beach-waves.mp4";
-const venice = "/videos/venice.mp4";
-const la_night = "/videos/la-night.mp4";
-const data_earth = "/videos/data-earth.mp4";
 const waves = "/videos/waves.mp4";
 const network_hub = "/videos/network-hub.mp4";
 const network = "/videos/network.mp4";
@@ -28,7 +25,7 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-b from-zinc-700 to-zinc-900">
       {/* HEADER */}
-      <div className="h-screen relative bg-gradient-to-b from-fuchsia-900 to-zinc-900">
+      <div className="h-screen relative bg-gradient-to-b from-fuchsia-900 top-0 to-zinc-900">
         <Image
           priority
           src={modern}
@@ -84,6 +81,10 @@ export default function Home() {
                 </a>
               </div>
             </div>
+
+            <div>
+              <Create />
+            </div>
           </div>
         </div>
       </div>
@@ -102,13 +103,13 @@ export default function Home() {
                 title={cards.card1.title}
                 description={cards.card1.description}
               />
-              <Card video={network} />
+              <Card url={cards.card2.url} video={network} />
               <Card
                 url={cards.card3.url}
                 title={cards.card3.title}
                 description={cards.card3.description}
               />
-              <CardWide video={network_hub} />
+              <CardWide url={cards.card4.url} video={network_hub} />
               <Card
                 url={cards.card5.url}
                 title={cards.card5.title}

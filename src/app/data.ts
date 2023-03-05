@@ -31,9 +31,9 @@ export const cards = {
   },
 
   card2: {
-    title: "hello world",
+    title: "Vercel",
     description: "hello world",
-    url: "/",
+    url: "https://vercel.com",
     video: "",
   },
 
@@ -47,12 +47,13 @@ export const cards = {
   card4: {
     title: "hello world",
     description: "hello world",
-    url: "/",
+    url: "https://linktreez.vercel.app/",
     video: "",
   },
   card5: {
     title: "Projects",
-    description: "hello world",
+    description:
+      "Aliqua velit dolor occaecat irure anim qui qui exercitation laboris consequat. Enim dolor velit ex ex commodo tempor minim enim. Dolor eu ea irure id esse nulla ut. Proident ea ut adipisicing sunt non irure ea mollit sit irure reprehenderit.",
     url: "https://engage-homepage.vercel.app/category/projects",
     video: "",
   },
