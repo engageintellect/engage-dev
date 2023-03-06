@@ -5,7 +5,7 @@ const notion = new Client({ auth: process.env.NOTION_API_KEY });
 
 const databaseId: string = process.env.NOTION_DATABASE_ID!;
 
-async function CREATE(text: string): Promise<void> {
+async function POST(text: string) {
   try {
     const response = await notion.pages.create({
       parent: { database_id: databaseId },
@@ -22,10 +22,10 @@ async function CREATE(text: string): Promise<void> {
       },
     });
     // console.log(response);
-    // console.log("Success! Entry added.");
+    console.log("Success! Entry added.");
   } catch (error) {
-    // console.error(error);
+    console.error(error);
   }
 }
 
-CREATE("new page");
+POST("testing page");

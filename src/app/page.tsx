@@ -8,7 +8,6 @@ import FadeIn from "./lib/components/FadeIn";
 import Card from "./lib/components/Card";
 import CardWide from "./lib/components/CardWide";
 import { info, hero, cards } from "./data";
-import Create from "./lib/notion/Create";
 // import { Inter } from "next/font/google";
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -80,10 +79,6 @@ export default function Home() {
                   {hero.button2.label}
                 </a>
               </div>
-            </div>
-
-            <div>
-              <Create />
             </div>
           </div>
         </div>
