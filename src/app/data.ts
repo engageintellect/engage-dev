@@ -1,7 +1,7 @@
 const waves = "../public/videos/waves.mp4";
 
 export const info = {
-  title: "My Site",
+  title: "engage-landing",
   description: "",
   github_url: "https://github.com/engageintellect",
   github_avatar: "https://github.com/engageintellect.png",
@@ -24,8 +24,7 @@ export const hero = {
 export const cards = {
   card1: {
     title: "About",
-    description:
-      "Aliqua velit dolor occaecat irure anim qui qui exercitation laboris consequat. Enim dolor velit ex ex commodo tempor minim enim. Dolor eu ea irure id esse nulla ut. Proident ea ut adipisicing sunt non irure ea mollit sit irure reprehenderit.",
+    description: "A hub for personal web development projects.",
     url: "/",
     video: waves,
   },
@@ -40,7 +39,7 @@ export const cards = {
   card3: {
     title: "Articles",
     description:
-      "Reprehenderit id Lorem voluptate cupidatat aliqua et do do. Est officia laborum et ut elit velit deserunt est laboris do ea. Do pariatur aliqua sint eu qui qui cupidatat id et officia fugiat irure ex. Qui excepteur qui in fugiat. Laboris quis velit dolore magna cupidatat reprehenderit dolore non do reprehenderit fugiat dolore aliqua.",
+      "Articles about development, projects, and other interesting topics.",
     url: "https://engage-homepage.vercel.app/category/articles",
     video: "",
   },
@@ -52,8 +51,7 @@ export const cards = {
   },
   card5: {
     title: "Projects",
-    description:
-      "Aliqua velit dolor occaecat irure anim qui qui exercitation laboris consequat. Enim dolor velit ex ex commodo tempor minim enim. Dolor eu ea irure id esse nulla ut. Proident ea ut adipisicing sunt non irure ea mollit sit irure reprehenderit.",
+    description: "Personal projects.",
     url: "https://engage-homepage.vercel.app/category/projects",
     video: "",
   },
@@ -66,14 +64,13 @@ export const cards = {
   },
   card7: {
     title: "Pi",
-    description:
-      "A private, secure, PocketBase backend. Hosted on a Raspberry Pi using Manjaro Linux.",
+    description: "A private, secure, PocketBase backend for development.",
     url: "http://192.168.0.185:8090/_/",
     video: "",
   },
   card8: {
     title: "Docs",
-    description: "A secure, local-only PocketBase backend.",
+    description: "Personal documentation site using Next 13 and Nextra docs.",
     url: "https://engageintellect-docs.vercel.app/docs",
     video: "",
   },
